@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using OdeToFood.Core;
-using System.Linq
+using System.Linq;
 
 namespace OdeToFood.Data
 {
@@ -26,7 +26,8 @@ namespace OdeToFood.Data
         }
         public IEnumerable<Restaurant> GetAll()
         {
-            return from r in restaurants orderby r.Name
+            return from r in restaurants 
+                   orderby r.Name
                    select r; 
             
         }
